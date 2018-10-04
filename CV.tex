@@ -1,0 +1,427 @@
+% !TEX TS-program = xelatex
+% !TEX encoding = UTF-8 Unicode
+% -*- coding: UTF-8; -*-
+% vim: set fenc=utf-8
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% CV.tex
+%% <https://github.com/zachscrivena/simple-resume-cv>
+%% This is free and unencumbered software released into the
+%% public domain; see <http://unlicense.org> for details.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% See "README.md" for instructions on compiling this document.
+
+\documentclass[letterpaper,MMMyyyy,nonstopmode]{simpleresumecv}
+% Class options:
+% a4paper, letterpaper, nonstopmode, draftmode
+% MMMyyyy, ddMMMyyyy, MMMMyyyy, ddMMMMyyyy, yyyyMMdd, yyyyMM, yyyy
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% PREAMBLE.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% CV Info (to be customized).
+\newcommand{\CVAuthor}{Chang Min Park}
+\newcommand{\CVTitle}{Chang Min Park's CV}
+\newcommand{\CVNote}{CV compiled on {\today}}
+\newcommand{\CVWebpage}{http://www.beyondthegeek.com/}
+
+% PDF settings and properties.
+\hypersetup{
+pdftitle={\CVTitle},
+pdfauthor={\CVAuthor},
+pdfsubject={\CVWebpage},
+pdfcreator={XeLaTeX},
+pdfproducer={},
+pdfkeywords={},
+unicode=true,
+bookmarks=true,
+bookmarksopen=true,
+pdfstartview=FitH,
+pdfpagelayout=OneColumn,
+pdfpagemode=UseOutlines,
+hidelinks,
+breaklinks}
+
+% Shorthand.
+\newcommand{\Code}[1]{\mbox{\textbf{#1}}}
+\newcommand{\CodeCommand}[1]{\mbox{\textbf{\textbackslash{#1}}}}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% ACTUAL DOCUMENT.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+
+%%%%%%%%%%%%%%%
+% TITLE BLOCK %
+%%%%%%%%%%%%%%%
+
+\Title{\CVAuthor}
+
+\begin{SubTitle}
+University at Buffalo, The State University of New York
+\par
+\href{mailto:cpark22@buffalo.edu}
+{cpark22@buffalo.edu}
+\,\SubBulletSymbol\,
++1\,(716)\,598-7331
+\,\SubBulletSymbol\,
+\href{\CVWebpage}
+{\url{\CVWebpage}}
+\end{SubTitle}
+
+\begin{Body}
+
+%%%%%%%%%%%%%%%
+%% Interests %%
+%%%%%%%%%%%%%%%
+
+\Section
+{Interests}
+{Interests}
+{PDF:Interests}
+
+\Entry
+Mobile systems, UI automation, and automated testing system.
+
+%%%%%%%%%%%%%%%%%%%%%%
+%% TECHNICAL SKILLS %%
+%%%%%%%%%%%%%%%%%%%%%%
+
+\Section
+{Technical Skills}
+{Technical Skills}
+{PDF:Technical Skills}
+
+\Entry
+Android Platform API, Soot API, Java, Python, C++, and Linux OS
+\BigGap
+
+%%%%%%%%%%%%%%%
+%% EDUCATION %%
+%%%%%%%%%%%%%%%
+
+\Section
+{Education}
+{Education}
+{PDF:Education}
+
+\Entry
+\textbf{University at Buffalo}, The State University of New York
+
+\Gap
+\BulletItem
+Ph.D. in Computer Science and Engineering
+\hfill
+\DatestampYD{Aug}{ `17} --
+\DatestampY{Present}
+\begin{Detail}
+\SubBulletItem
+Advisor:
+Prof.~Steven~Y.~Ko
+\SubBulletItem
+Focus:
+Mobile computing and applications.
+\end{Detail}
+
+\Gap
+\BulletItem
+B.S. in Computer Science
+\hfill
+\DatestampYD{Aug}{ `11} --
+\DatestampYD{May}{ `17}
+\begin{Detail}
+\SubBulletItem
+Magna Cum Laude
+\SubBulletItem
+Jun `13 -- Mar `15: Served Military Service in Republic of Korea
+\end{Detail}
+
+\BigGap
+\Entry
+\textbf{Yonsei University}, Republic of Korea
+
+\Gap
+\BulletItem
+SUNY Study Abroad Program
+\hfill
+\DatestampYD{Summer}{ `12}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%
+%% RESEARCH OVERVIEW %%
+%%%%%%%%%%%%%%%%%%%%%%%
+
+\Section
+{Research Overview}
+{Research Overview}
+{PDF:ResearchOverview}
+
+\Entry
+Over the course from my undergraduate to Ph.D., I have focused on mobile systems and automation.
+
+\Gap
+\BulletItem
+\textbf{Gesto} is a system that enables task automation for Android apps using gestures 
+and voice commands. Using our system, a user can record a UI action sequence for an app, 
+choose a gesture or a voice command to activate the UI action sequence, and later trigger 
+the UI action sequence by the corresponding gesture/voice command.
+\hfill
+
+\Gap
+\BulletItem
+\textbf{Reptor} enables open innovation in mobile platforms. Our technique allows third-party 
+developers to modify, instrument, or extend platform API calls and deploy their modifications 
+seamlessly. The uniqueness of our technique is that it enables modifications completely at 
+the app layer without requiring any platform-level changes. 
+\hfill
+
+\Gap
+\BulletItem
+\textbf{Mimic} is an automated UI compatibility testing system for Android apps. 
+Mimic is designed specifically for comparing the UI behavior of an app across different 
+devices, different Android versions, and different app versions.
+\hfill
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%
+%% RESEARCH EXPERIENCE %%
+%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\Section
+{Research Experience}
+{Research Experience}
+{PDF:ResearchExperience}
+
+\Entry
+\textbf{University at Buffalo}, The State University of New York
+
+\Gap
+\BulletItem
+Ph.D. Research Assistant, RMS Lab
+\hfill
+\DatestampYD{Aug}{ `18} --
+\DatestampY{Present}
+\begin{Detail}
+\SubBulletItem
+Project:
+Mapping UI Events to Gestures and Voice, and Automated Testing System.
+\end{Detail}
+
+\Gap
+\BulletItem
+Undergraduate Research Assistant, RMS Lab
+\hfill
+\DatestampYD{May}{ `16} --
+\DatestampYD{Aug}{ `17}
+\begin{Detail}
+\SubBulletItem
+Project:
+Android Platform API Virtualization
+\end{Detail}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%
+%% TEACHING EXPERIENCE %%
+%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\Section
+{Teaching Experience}
+{Teaching Experience}
+{PDF:TeachingExperience}
+
+\Entry
+\textbf{University at Buffalo}, The State University of New York
+
+\Gap
+\BulletItem
+CSE421/521: Operating Systems
+\hfill
+\DatestampYD{Aug}{ `17} --
+\DatestampY{May}{ `18}
+\begin{Detail}
+\SubBulletItem
+Design and Implementation of Operating Systems
+\SubBulletItem
+Project: Pintos Programming
+\end{Detail}
+
+
+
+%%%%%%%%%%%%%%%%%%
+%% PUBLICATIONS %%
+%%%%%%%%%%%%%%%%%%
+
+\Section
+{Publications}
+{Publications}
+{PDF:Publications}
+
+\SubSection
+{Conferences}
+{Conferences}
+{PDF:Conferences}
+
+% Declare a new group to limit the scope of \MaxNumberedItem to this subsection.
+\begingroup
+\renewcommand{\MaxNumberedItem}{[88]}
+
+\BigGap
+\NumberedItem{[1]}
+\underline{Chang~Min~Park}, Taeyeon~Ki, Ali Ben Ali, 
+Nikhil Sunil Pawar, Karthik Dantu, Steven Y. Ko, and Lukasz Ziarek, 
+``Gesto: Mapping UI Events to Gestures and Voice''
+forthcoming in
+\textit{Proceedings of 11th ACM SIGCHI Symposium on Engineering Interactive Computing Systems (EICS)
+\DatestampYM{2019}{06}.}
+
+\Gap
+\NumberedItem{[2]}
+\href{https://dl.acm.org/citation.cfm?id=3081341}
+{Taeyeon Ki, Alexander Simeonov, Bhavika Pravin Jain, \underline{Chang Min Park},
+Keshav Sharma, Karthik Dantu, Stevn Y. Ko, and Lukasz Ziarek, 
+``Reptor: Enabling API Virtualization on Android for Platform Openness'' in 
+\textit{Proceedings of the 15th Annual International Conference on Mobile Systems (MobiSys)
+\DatestampYM{2017}{6}}.}
+
+
+\BigGap
+\SubSection
+{Journals}
+{Journals}
+{PDF:Journals}
+
+% Declare a new group to limit the scope of \MaxNumberedItem to this subsection.
+\begingroup
+\renewcommand{\MaxNumberedItem}{[88]}
+
+\BigGap
+\NumberedItem{[1]}
+\underline{Chang~Min~Park}, Taeyeon~Ki, Ali Ben Ali, 
+Nikhil Sunil Pawar, Karthik Dantu, Steven Y. Ko, and Lukasz Ziarek, 
+``Gesto: Mapping UI Events to Gestures and Voice''
+forthcoming in
+\textit{Journal Proceedings of the ACM on Human-Computer Interaction - EICS
+\DatestampY{2019}.}
+
+
+%%%%%%%%%%%%%%%%%%%%%
+%% POSTERS & DEMOS %%
+%%%%%%%%%%%%%%%%%%%%%
+
+\Section
+{Posters and Demos}
+{Posters and Demos}
+{PDF:Posters and Demos}
+
+\SubSection
+{Posters}
+{Posters}
+{PDF:Posters}
+
+\begingroup
+\renewcommand{\MaxNumberedItem}{[88]}
+
+\BigGap
+\NumberedItem{[1]}
+\underline{Chang~Min~Park}, Taeyeon~Ki, Ali Ben Ali, Karthik Dantu, Steven Y. Ko, 
+and Lukasz Ziarek, 
+``Enabling Dynamic Gesture Mapping with UI Events'' in
+\textit{UB Graduate Research Conference and Alumni Symposium
+\DatestampYM{2017}{09}.}
+
+\BigGap
+\SubSection
+{Demos}
+{Demos}
+{PDF:Demos}
+
+\begingroup
+\renewcommand{\MaxNumberedItem}{[88]}
+
+\BigGap
+\NumberedItem{[1]}
+\underline{Chang~Min~Park}, Taeyeon~Ki, Karthik Dantu, Steven Y. Ko, and Lukasz Ziarek, 
+``Demo: Enabling Dynamic Gesture Mapping with UI Events'' in
+\textit{Proceedings of the 15th Annual International Conference on Mobile Systems (MobiSys)
+\DatestampYM{2017}{6}}.}
+
+\Gap
+\NumberedItem{[2]}
+Taeyeon Ki, Alexander Simeonov, \underline{Chang~Min~Park}, Karthik Dantu, Steven Y. Ko, 
+and Lukasz Ziarek, 
+``Demo: Reptor: Enabling API Virtualization on Android for Platform Openness'' in
+\textit{Proceedings of the 15th Annual International Conference on Mobile Systems (MobiSys)
+\DatestampYM{2017}{6}}.}
+
+\Gap
+\NumberedItem{[3]}
+Taeyeon~Ki, Alexander Simeonov, \underline{Chang~Min~Park}, Karthik Dantu, 
+Steven Y. Ko, and Lukasz Ziarek, 
+``Demo: Fully Automated UI Testing System for Large-scale Android Apps Using Multiple 
+Devices'' in
+\textit{Proceedings of the 15th Annual International Conference on Mobile Systems (MobiSys)
+\DatestampYM{2017}{6}}.}
+
+
+
+%%%%%%%%%%%%%%%%%%%%%
+%% HONORS & AWARDS %%
+%%%%%%%%%%%%%%%%%%%%%
+
+\Section
+{Honors \&\newline
+Awards}
+{Honors \& Awards}
+{PDF:HonorsAndAwards}
+
+
+\BulletItem
+Dean’s Fellowship Award along with a Full Financial Aid
+\hfill
+\DatestampY{2017} --
+\DatestampY{2018}
+\begin{Detail}
+\Item
+For exceptional graduate students who have potential for an outstanding 
+graduate career at this University. 
+\end{Detail}
+
+\Gap
+\BulletItem
+CSE Undergraduate Award for Research, University at Buffalo
+\hfill
+\DatestampYMD{2017}{05}{19}
+
+\Gap
+\BulletItem
+Dean's List, Fall 2012, University at Buffalo
+\hfill
+\DatestampY{2012}
+
+
+
+%%%%%%%%%%%%%%%%
+%% ACTIVITIES %%
+%%%%%%%%%%%%%%%%
+
+\Section
+{Activities}
+{Activities}
+{PDF:Activities}
+
+\Entry
+\textbf{Tau Beta Pi Engineering Honor Society},
+University at Buffalo
+
+\Gap
+\BulletItem
+Member
+\hfill
+\DatestampY{2016} --
+\DatestampY{2017}
+
+
+
+\end{document}
