@@ -3,5 +3,5 @@
 **Website:**<br>
 http://www.beyondthegeek.com
 
-![alt text](https://github.com/ChangMinPark/cv/blob/master/CV.pdf?raw=true)
+<img src="https://github.com/ChangMinPark/cv/blob/master/CV.pdf?raw=true" width="220" height="240" />
 
