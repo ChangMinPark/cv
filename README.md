@@ -3,5 +3,11 @@
 **Website:**<br>
 http://www.beyondthegeek.com
 
-<img src="CV.pdf" width="220" />
+**CV:**<br>
+https://github.com/ChangMinPark/cv/blob/master/CV.pdf
+
+**Build Command:**
+```sh
+$ latexmk -xelatex "CV.tex"
+```
 
