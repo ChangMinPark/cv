@@ -1,4 +1,4 @@
-# Chang Min's Resume and CV
+# Chang Min's CV
 
 **Website:**<br>
 http://www.beyondthegeek.com
