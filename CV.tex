@@ -84,7 +84,8 @@ University at Buffalo, The State University of New York
 {PDF:Interests}
 
 \Entry
-Systems Challenges in Mobile Systems, Automated Software Analysis, and UI Testing.
+Secured Image Display using Trusted Execution Environment (TEE), Systems Challenges in Mobile Systems, 
+Automated Software Analysis, and UI Testing.
 
 %%%%%%%%%%%%%%%%%%%%%%
 %% TECHNICAL SKILLS %%
@@ -96,7 +97,7 @@ Systems Challenges in Mobile Systems, Automated Software Analysis, and UI Testin
 {PDF:Technical Skills}
 
 \Entry
-Android Internals and App Development, Bytecode Instrumentation Tools (Soot), TrustZone,
+ARM TrustZone, Android Internals and App Development, Bytecode Instrumentation Tools (Soot),
 Firebase Realtime Database, Java, Python, C, and Linux OS
 \BigGap
 
@@ -137,18 +138,11 @@ B.S. in Computer Science
 \SubBulletItem
 Magna Cum Laude
 \SubBulletItem
+Summer `12: Study Abroad Program at Yonsei University in Republic of Korea
+\SubBulletItem
 Jun `13 -- Mar `15: Served Military Service in Republic of Korea
 \end{Detail}
 
-\BigGap
-\Entry
-\textbf{Yonsei University}, Republic of Korea
-
-\Gap
-\BulletItem
-SUNY Study Abroad Program
-\hfill
-\DatestampYD{Summer}{ `12}
 
 \BigGap
 \Entry
@@ -166,29 +160,20 @@ VLSI Electronics, and Theory of Computation.
 {Research Overview}
 {PDF:ResearchOverview}
 
-%\Entry
-%Currently, I'm working on two projects below.
-%\Gap
-%\BulletItem
-%\textbf{Immix} garbage collection is powerful and well-known, but Dart VM, that Google's 
-%new framework Flutter uses, has generation garbage collection. My goal is implementing the Immix garbage 
-%collection in Dart VM and analyzing its performance.
-%\hfill
-
-%\Gap
-%\BulletItem
-%\textbf{AR Authentication on Mobile} can be solved by using TrustZone feature that has two separate environments, 
-%normal and secure. Depending on user's authentication level, a mobile device should be able to authenticate 
-%augmented objects. I'm currently working on implementing authentication of AR using TrustZone enabled board. 
-%\hfill
-
 \Entry
-%Over the course from my undergraduate to Ph.D., I have focused on mobile systems.
 Through my undergraduate and graduate studies, my research has focused on mobile systems.
 
 \Gap
 \BulletItem
-\textbf{Gesto} [EICS `19, PACM-HCI, Best Paper Honorable Mention] is a system that enables task automation for Android apps using gestures 
+\textbf{Rushmore} [Under submission] is a system that securely displays static or animated images 
+using TrustZone. The core functionality of Rushmore is to securely decrypt and display encrypted 
+images from a trusted party on a mobile device.
+\hfill
+
+\Gap
+\BulletItem
+\textbf{Gesto} [EICS `19, PACM-HCI, Best Paper Honorable Mention] is a system that enables task 
+automation for Android apps using gestures 
 and voice commands. Using this system, a user can record a UI action sequence for an app, 
 choose a gesture or a voice command to activate the UI action sequence, and later trigger 
 the UI action sequence by the corresponding gesture/voice command.
@@ -197,6 +182,18 @@ the UI action sequence by the corresponding gesture/voice command.
 \textbf{\textit{Link: \href{http://beyondthegeek.com/portfolio/gesto-eics-19/}
 {http://beyondthegeek.com/portfolio/gesto-eics-19/}}}
 \hfill
+
+
+\Gap
+\BulletItem
+\textbf{Mimic} [ICSE `19] is an automated UI compatibility testing system for Android apps. 
+Mimic is designed specifically for comparing the UI behavior of an app across different 
+devices, different Android versions, and different app versions.
+
+\hspace{2ex}
+\textbf{\textit{Link: \href{http://beyondthegeek.com/portfolio/mimic-icse-19/}{http://beyondthegeek.com/portfolio/mimic-icse-19/}}}
+\hfill
+
 
 \Gap
 \BulletItem
@@ -209,15 +206,6 @@ the app layer without requiring any platform-level changes.
 \textbf{\textit{Link: \href{http://reptor.cse.buffalo.edu/}{http://reptor.cse.buffalo.edu/}}}
 \hfill
 
-\Gap
-\BulletItem
-\textbf{Mimic} [ICSE `19] is an automated UI compatibility testing system for Android apps. 
-Mimic is designed specifically for comparing the UI behavior of an app across different 
-devices, different Android versions, and different app versions.
-
-\hspace{2ex}
-\textbf{\textit{Link: \href{http://beyondthegeek.com/portfolio/mimic-icse-19/}{http://beyondthegeek.com/portfolio/mimic-icse-19/}}}
-\hfill
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%
@@ -237,12 +225,7 @@ devices, different Android versions, and different app versions.
 Ph.D. Research Assistant, RMS Lab
 \hfill
 \DatestampYD{Aug}{ `18} --
-\DatestampY{Dec}{ `19}
-\begin{Detail}
-\SubBulletItem
-Project:
-Mapping UI Events to Gestures and Voice, and Automated Testing of Mobile Devices.
-\end{Detail}
+\DatestampY{Present}
 
 \Gap
 \BulletItem
@@ -250,11 +233,7 @@ Undergraduate Research Assistant, RMS Lab
 \hfill
 \DatestampYD{May}{ `16} --
 \DatestampYD{Aug}{ `17}
-\begin{Detail}
-\SubBulletItem
-Project:
-Android Platform API Virtualization
-\end{Detail}
+
 
 %%%%%%%%%%%%%%%%%%%%%%%%%
 %% TEACHING EXPERIENCE %%
@@ -274,10 +253,6 @@ CSE486/586: Distributed Systems
 \hfill
 \DatestampYD{Jan}{ `20} --
 \DatestampY{Present}
-\begin{Detail}
-\SubBulletItem
-Fundamental Techniques of Industry's Most Critical Distributed Systems
-\end{Detail}
 
 \Gap
 \BulletItem
@@ -285,10 +260,6 @@ CSE421/521: Operating Systems
 \hfill
 \DatestampYD{Aug}{ `17} --
 \DatestampY{May}{ `18}
-\begin{Detail}
-\SubBulletItem
-Design and Implementation of Operating Systems
-\end{Detail}
 
 
 
@@ -301,10 +272,10 @@ Design and Implementation of Operating Systems
 {Publications}
 {PDF:Publications}
 
-%\SubSection
-%{Published}
-%{Published}
-%{PDF:Published}
+\SubSection
+{Published}
+{Published}
+{PDF:Published}
 
 % Declare a new group to limit the scope of \MaxNumberedItem to this subsection.
 \begingroup
@@ -336,14 +307,23 @@ Keshav Sharma, Karthik Dantu, Stevn Y. Ko, and Lukasz Ziarek,
 , \DatestampYM{2017}{6}}.}
 
 
-%\SubSection
-%{Submitted}
-%{Submitted}
-%{PDF:Submitted}
+
+\SubSection
+{Submitted}
+{Submitted}
+{PDF:Submitted}
 
 % Declare a new group to limit the scope of \MaxNumberedItem to this subsection.
-%\begingroup
-%\renewcommand{\MaxNumberedItem}{[88]}
+\begingroup
+\renewcommand{\MaxNumberedItem}{[88]}
+
+\Gap
+\NumberedItem{[1]}
+\underline{Chang Min Park}, Donghwi Kim, Deepesh Veersen Sidhwani, Andrew Fuchs, Arnob Paul,
+Sung-Ju Lee, Karthik Dantu, and Stevn Y. Ko,
+``Rushmore: Securely Displaying Static and AnimatedImages Using TrustZone'' submitted to
+\textit{Proceedings of the 19th Annual International Conference on Mobile Systems \textbf{(MobiSys)}
+\DatestampYM{2021}.}
 
 
 %%%%%%%%%%%%%%%%%%%%%
@@ -429,31 +409,31 @@ Awards}
 Best Paper Honorable Mention Award
 \hfill
 \DatestampYM{2019}{06}
-\begin{Detail}
-\Item
-\textit{Proceedings of 11th ACM SIGCHI Symposium on Engineering Interactive Computing Systems \textbf{(EICS)}}
-\end{Detail}
+%\begin{Detail}
+%\Item
+%\textit{Proceedings of 11th ACM SIGCHI Symposium on Engineering Interactive Computing Systems \textbf{(EICS)}}
+%\end{Detail}
 
 \Gap
 \BulletItem
 UB SEAS Dean’s Fellowship
 \hfill
 \DatestampY{2017}
-\begin{Detail}
-\Item
-For exceptional graduate students who have potential for an outstanding 
-graduate career 
-\end{Detail}
+%\begin{Detail}
+%\Item
+%For exceptional graduate students who have potential for an outstanding 
+%graduate career 
+%\end{Detail}
 
 \Gap
 \BulletItem
 CSE Undergraduate Award for Research, University at Buffalo
 \hfill
 \DatestampYMD{2017}{05}{19}
-\begin{Detail}
-\Item
-Awarded to one graduating senior who has done exceptional research with a UB CSE faculty
-\end{Detail}
+%\begin{Detail}
+%\Item
+%Awarded to one graduating senior who has done exceptional research with a UB CSE faculty
+%\end{Detail}
 
 \Gap
 \BulletItem
@@ -466,21 +446,21 @@ Dean's List, University at Buffalo
 %% ACTIVITIES %%
 %%%%%%%%%%%%%%%%
 
-\Section
-{Activities}
-{Activities}
-{PDF:Activities}
+%\Section
+%{Activities}
+%{Activities}
+%{PDF:Activities}
 
-\Entry
-\textbf{Tau Beta Pi Engineering Honor Society},
-University at Buffalo
+%\Entry
+%\textbf{Tau Beta Pi Engineering Honor Society},
+%University at Buffalo
 
-\Gap
-\BulletItem
-Member
-\hfill
-\DatestampY{2016} --
-\DatestampY{2017}
+%\Gap
+%\BulletItem
+%Member
+%\hfill
+%\DatestampY{2016} --
+%^\DatestampY{2017}
 
 
 %%%%%%%%%%%%%%%%
