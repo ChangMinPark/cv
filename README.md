@@ -1,7 +1,7 @@
 # Chang Min's CV
 
 **Website:**<br>
-http://www.beyondthegeek.com
+https://changminpark.github.io/
 
 **CV:**<br>
 https://github.com/ChangMinPark/cv/blob/master/CV.pdf
