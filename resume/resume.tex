@@ -1,0 +1,315 @@
+% !TEX TS-program = xelatex
+% !TEX encoding = UTF-8 Unicode
+% -*- coding: UTF-8; -*-
+% vim: set fenc=utf-8
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% CV.tex
+%% <https://github.com/zachscrivena/simple-resume-cv>
+%% This is free and unencumbered software released into the
+%% public domain; see <http://unlicense.org> for details.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% See "README.md" for instructions on compiling this document.
+\documentclass[letterpaper,MMMyyyy,nonstopmode]{simpleresumecv}
+
+% Class options:
+% a4paper, letterpaper, nonstopmode, draftmode
+% MMMyyyy, ddMMMyyyy, MMMMyyyy, ddMMMMyyyy, yyyyMMdd, yyyyMM, yyyy
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% PREAMBLE.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% CV Info (to be customized).
+\newcommand{\CVAuthor}{Chang Min Park}
+\newcommand{\CVTitle}{Chang Min Park's Resume}
+\newcommand{\CVNote}{Resume compiled on {\today}}
+\newcommand{\CVWebpage}{https://changminpark.github.io/}
+
+% PDF settings and properties.
+\hypersetup{
+pdftitle={\CVTitle},
+pdfauthor={\CVAuthor},
+pdfsubject={\CVWebpage},
+pdfcreator={XeLaTeX},
+pdfproducer={},
+pdfkeywords={},
+unicode=true,
+bookmarks=true,
+bookmarksopen=true,
+pdfstartview=FitH,
+pdfpagelayout=OneColumn,
+pdfpagemode=UseOutlines,
+hidelinks,
+breaklinks}
+
+% Shorthand.
+\newcommand{\Code}[1]{\mbox{\textbf{#1}}}
+\newcommand{\CodeCommand}[1]{\mbox{\textbf{\textbackslash{#1}}}}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% ACTUAL DOCUMENT.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+
+%%%%%%%%%%%%%%%
+% TITLE BLOCK %
+%%%%%%%%%%%%%%%
+
+\Title{\CVAuthor}
+
+\begin{SubTitle}
+University at Buffalo, The State University of New York
+\par
+\href{mailto:cpark22@buffalo.edu}
+{cpark22@buffalo.edu}
+\,\SubBulletSymbol\,
++1\,(716)\,598-7331
+\,\SubBulletSymbol\,
+\href{\CVWebpage}
+{\url{\CVWebpage}}
+\end{SubTitle}
+
+\begin{Body}
+
+%%%%%%%%%%%%%%%
+%% Interests %%
+%%%%%%%%%%%%%%%
+\vspace{-0.7ex}
+\Section
+{Interests}
+{Interests}
+{PDF:Interests}
+
+\Entry
+End Device Security, Task Automation, UI Compatibility Testing, 
+Automated Software Analysis, and Other Various Challenges in Mobile Systems.
+
+%%%%%%%%%%%%%%%%%%%%%%
+%% TECHNICAL SKILLS %%
+%%%%%%%%%%%%%%%%%%%%%%
+\vspace{-0.7ex}
+\Section
+{Technical Skills}
+{Technical Skills}
+{PDF:Technical Skills}
+
+\Entry
+Android Internals and App Development, Bytecode Instrumentation Tools (Soot),
+ARM TrustZone, Google SafetyNet, AWS EC2/RDS, Figma, Java, Python, C, and Linux OS
+
+%%%%%%%%%%%%%%%
+%% EDUCATION %%
+%%%%%%%%%%%%%%%
+\vspace{-0.7ex}
+\Section
+{Education}
+{Education}
+{PDF:Education}
+
+\Entry
+\textbf{University at Buffalo}, The State University of New York
+
+\Gap
+\BulletItem
+Ph.D. in Computer Science and Engineering
+\hfill
+\DatestampYD{Aug}{ `17} --
+\DatestampY{Present}
+
+\Gap
+\BulletItem
+B.S. in Computer Science, \textit{Magna Cum Laude}
+\hfill
+\DatestampYD{Aug}{ `11} --
+\DatestampYD{May}{ `17}
+\begin{Detail}
+\SubBulletItem
+Jun `13 -- Mar `15: Served Military Service in Republic of Korea
+\end{Detail}
+
+%\BigGap
+%\Entry
+%\textbf{Relevant Courses:} Advanced Computer Systems, Advanced Programming Languages, 
+%Operating Systems, Distributed Systems, Realtime Embedded Systems, Modern Network Concepts, 
+%Data Intensive Computing, Computer Security, Algorithms Analysis \& Design,
+%VLSI Electronics, and Theory of Computation.
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%
+%% RESEARCH EXPERIENCE %%
+%%%%%%%%%%%%%%%%%%%%%%%%%
+\vspace{-0.7ex}
+\Section
+{Experience}
+{Experience}
+{PDF:ResearchExperience}
+
+
+\Entry
+\textbf{CTO \& Founding Member}, Breeding (Startup in South Korea)
+\hfill
+\DatestampYD{May}{ `20} --
+\DatestampY{Jul}{ `21}
+\Gap
+\BulletItem
+The first non-face-to-face platform service that connects dog owners and trainers.
+\hfill
+
+\Gap
+\BulletItem
+Designed an app service and a business model.
+
+\Gap
+\vspace{1ex}
+
+\Entry
+\textbf{Research Assistant}, University at Buffalo, The State University of New York
+\hfill
+\DatestampYD{May}{ `16} --
+\DatestampY{Present}
+
+\vspace{0.5ex}
+\Entry
+\textbf{Teaching Assistant}, University at Buffalo, The State University of New York
+\hfill
+\DatestampYD{Aug}{ `17} --
+\DatestampYD{May}{ `21}
+\Gap
+\BulletItem
+Distributed Systems and Operating Systems 
+
+
+
+%%%%%%%%%%%%%%
+%% Projects %%
+%%%%%%%%%%%%%%
+\vspace{-0.7ex}
+\Section
+{Selected Projects}
+{Selected Projects}
+{PDF:Selected Projects}
+
+\Entry
+\textbf{End-to-End System Protecting Integrity of Images Across Social Media} 
+(Under Submission `22)
+\Gap
+\BulletItem
+Implemented a system embedding an \underline{invisible hash watermark} into raw 
+pixels, checking whether the image has been tampered in the middle, and 
+recovering the tampered areas using \underline{error-correction code}.
+\BulletItem
+Leveraged (1) \underline{Google SafetyNet} to protect an image acquisition path 
+on an image producer's device and (2) \underline{digital certificates} to 
+simplify key sharing for integrity check. 
+
+\vspace{1ex}
+\Entry
+\textbf{Securely Displaying Static and Animated Images Using TrustZone} 
+(Published in MobiSys `21)
+\Gap
+\BulletItem
+Implemented a system protecting image display from the compromised OS using 
+\underline{ARM TrustZone}.
+\BulletItem
+Leveraged (1) \underline{IPU's multiple display channels} to enable simultaneous 
+displaying from both untrusted and trusted domains, (2) \underline{ChaCha20}, 
+a fast stream cipher, to provide frame rates around or higher than 30 FPS, 
+and (3) \underline{visual cryptography} to provide an alternative to regular 
+cryptography.
+
+\vspace{1ex}
+\Entry
+\textbf{Mapping UI Events to Gestures and Voice Commands} 
+(Published in EICS ‘19, PACM­HCI, Best Paper)
+\Gap
+\BulletItem
+Implemented a system enabling task automation for Android apps with gestures 
+and voice commands. 
+\BulletItem
+Leveraged (1) \underline{bytecode instrumentation} tool to analyze an app and 
+to inject functionality without the need for source code and 
+(2) \underline{UI record-and-replay} technique to record a sequence of UI 
+actions and later replay it with a mapped gesture or voice command.
+
+
+\vspace{1ex}
+\Entry
+\textbf{UI Compatibility Testing System for Android Apps} 
+(Published in ICSE ‘19)
+\Gap
+\BulletItem
+Implemented a system automatically comparing the UI behavior of an app across 
+different devices, different Android versions, and different app versions.
+\BulletItem
+Detected various \underline{forward and backward compatibility} issues on 
+thousands of apps on Google Play in a short period of time by building a 
+\underline{parallel testing} strategy and a \underline{programming model} for 
+scripting it.
+
+
+\vspace{1ex}
+\Entry
+\textbf{Enabling API Virtualization on Android for Platform Openness} 
+(Published in MobiSys ‘17)
+\Gap
+\BulletItem
+Implemented a system allowing third-party developers to modify, instrument, or 
+extend platform API calls and deploy their modifications seamlessly. 
+\BulletItem
+Leveraged \underline{bytecode instrumentation} tool to enables modifications 
+completely at the app layer without requiring any platform-level changes. 
+
+
+
+
+%%%%%%%%%%%%%%%%%%%%%
+%% AWARDS & GRANTS %%
+%%%%%%%%%%%%%%%%%%%%%
+\vspace{0ex}
+\Section
+{Awards and\newline
+Grants}
+{Awards and Grants}
+{PDF:AwardsAndGrants}
+
+\BulletItem
+Excellence Award with \$80,000 Grant in K-Startup Contest, \textit{South Korea}
+\hfill
+\DatestampYM{2020}{11}
+\vspace{0.3ex}
+
+\BulletItem
+Top Award in Youth Startup Awards, \textit{South Korea}
+\hfill
+\DatestampYM{2020}{10}
+\vspace{0.3ex}
+
+\BulletItem
+Pre-Startup Package with \$50,000 Grant, \textit{South Korea} 
+\hfill
+\DatestampYM{2020}{09}
+\vspace{0.3ex}
+
+\BulletItem
+Best Paper Honorable Mention Award, \textit{EICS}
+\hfill
+\DatestampYM{2019}{06}
+\vspace{0.3ex}
+
+\Gap
+\BulletItem
+SEAS Dean’s Fellowship, University at Buffalo
+\hfill
+\DatestampY{2017}
+\vspace{0.3ex}
+
+\Gap
+\BulletItem
+CSE Undergraduate Award for Research, University at Buffalo
+\hfill
+\DatestampYMD{2017}{05}{19}
+\lastpage
+\end{document}
